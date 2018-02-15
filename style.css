@@ -1,8 +1,10 @@
 body {
-  padding: 20px;
+  padding-left: 100px;
+  padding-top: 20px;
 }
 
 h3 {
+  text-align:center;
   font-size: 40px;
 }
 #map {
@@ -11,13 +13,10 @@ h3 {
   border: solid black 5px;
  }
 
- footer {
-   display: inline-block;
-   background-color: lightgrey;
- }
 
 footer p {
   color: black;
+  text-align:center;
   font-size: 20px;
 }
 
