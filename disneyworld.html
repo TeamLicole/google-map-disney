@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>The World of Disney</h3>
+
+<select name="parks" onchange="location = this.value;">
+<option value="" selected disabled hidden>Select a park:</option>
+  <option value="disneyworld.html">Disney World</option>
+  <option value="disneyland.html">Disneyland</option>
+  <option value="paris.html">Disneyland Paris</option>
+  <option value="hongKong.html">Hong Kong Disneyland</option>
+  <option value="tokyo.html">Tokyo Disneyland</option>
+  <option value="shanghai.html">Shanhai Disneyland</option>
+</select>
+</br></br>
+
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 28.5383, lng: -81.3792};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3PL25GFcKcqBZMU8IFIDSpmHgNj8Q9oQ&callback=initMap">
+    </script>
+  </body>
+</html>
