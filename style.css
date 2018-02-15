@@ -1,6 +1,26 @@
+body {
+  padding: 20px;
+}
+
+h3 {
+  font-size: 40px;
+}
 #map {
   height: 400px;
   width: 50%;
-  padding: 30px;
   border: solid black 5px;
  }
+
+ footer {
+   display: inline-block;
+   background-color: lightgrey;
+ }
+
+footer p {
+  color: black;
+  font-size: 20px;
+}
+
+footer a {
+  color: black;
+}
