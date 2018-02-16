@@ -4,7 +4,14 @@ body {
 
 h3 {
   font-size: 40px;
+  font-family: cursive;
 }
+
+select {
+  height: 30px;
+  width: 50%;
+}
+
 #map {
   height: 400px;
   width: 50%;
@@ -13,14 +20,18 @@ h3 {
 
  footer {
    display: inline-block;
-   background-color: lightgrey;
+   background-color: rgba(235, 233, 233, 0.5);
+   padding-left: 20px;
+   padding-right: 20px;
  }
 
 footer p {
   color: black;
   font-size: 20px;
+  opacity: 1;
 }
 
 footer a {
   color: black;
+  font-size: 18px;
 }
